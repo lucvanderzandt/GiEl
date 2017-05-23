@@ -1,0 +1,21 @@
+{
+    "manifest_version": 2,
+    "name": "GiEl",
+    "description": "OkE gIeL iS gOeD",
+    "version": "1.0",
+    "content_scripts": [
+        {
+            "matches": ["*://*.nu.nl/*"],
+            "js":["script.js"],
+	        "run_at": "document_end"
+        }
+    ],
+	"icons": { 
+		"16": "icon.png",
+        "48": "icon.png",
+        "128": "icon.png" 
+	},
+    "permissions": [
+        "activeTab"
+    ]
+}
